@@ -1,0 +1,209 @@
+/* Table of Contents:
+    Home Section
+    Skills Section
+    Certificates Section
+    Education Section
+    Contact Section
+    Overwriting Page Piling.js
+    Responsive Breakpoints
+ * --------------------------------------- */
+
+h1,
+h2,
+h3,
+button,
+label {
+    font-family: 'Raleway', sans-serif;
+    color: #e84855;
+}
+
+p,
+li,
+i {
+    font-family: 'Lato', sans-serif;
+    color: #7a7a7a;
+}
+
+b,
+label {
+    color: #fff;
+}
+
+label {
+    width: 100px;
+    height: 38px;
+    padding: 7px 10px 7px 10px;
+    margin: 10px;
+    border-left: 2px solid #e84855;
+    border-radius: .25rem
+}
+
+button {
+    background: transparent;
+    padding: 10px 0 10px 0;
+    border: 2px solid #e84855;
+    transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+}
+
+button:hover {
+    background: #e84855;
+    color: #fff;
+}
+
+.btn-wide {
+    width: 250px;
+}
+
+.btn-skinny {
+    width: 150px;
+}
+
+.section {
+    padding: 10px 50px 0 150px;
+}
+
+.i-red {
+    color: #e84855;
+}
+
+#rotate {
+    display: none;
+}
+
+
+/* Home Section
+ * --------------------------------------- */
+
+.social-media-buttons {
+    margin-top: 30px;
+}
+
+.social-media-buttons>a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.social-media-buttons>a>i:hover {
+    color: #e84855;
+}
+
+
+/* Skills, Certs, Education Section
+ * --------------------------------------- */
+
+#global-left {
+    color: #fff;
+}
+
+.global-item {
+    margin: 50px 0 5px 0;
+}
+
+.global-item-head {
+    margin: 5px 5px 5px 0;
+    border-left: 6px solid #e84855;
+    padding-left: 10px;
+}
+
+.global-item-body {
+    padding-left: 20px;
+}
+
+
+/* Contact Section
+ * --------------------------------------- */
+
+.form-control {
+    margin: 10px 0 10px 0;
+    background: transparent;
+    color: #7a7a7a;
+    border-color: #7a7a7a;
+}
+
+.form-control:focus {
+    background: transparent;
+    border-color: #fff;
+    box-shadow: none;
+    color: #fff;
+}
+
+
+/* Overwriting Page Piling.js
+* --------------------------------------- */
+
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+    background: #e84855 !important;
+}
+
+#pp-nav span,
+.pp-slidesNav span {
+    border-color: #e84855 !important;
+}
+
+
+/* Responsive Breakpoints
+* --------------------------------------- */
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+    #rotate {
+        position: relative;
+        background: #252525 no-repeat center;
+        background-size: auto auto;
+        background-size: 100% auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        display: block;
+        opacity: 1 !important;
+    }
+}
+
+@media (max-width: 800px) and (max-height: 500px) {
+    #btnContact,
+    #home .social-media-buttons,
+    .skills-item,
+    #contact-right>img,
+    figcaption>p {
+        display: none;
+    }
+    figure {
+        height: 200px;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p,
+    button {
+        font-size: 1rem;
+    }
+    #home img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact-left {
+        display: none;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    figcaption>p {
+        font-size: 0.8rem;
+    }
+}
