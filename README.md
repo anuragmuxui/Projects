@@ -1,2 +1,2 @@
-# Projetcs
+# Projects
 Intership-Projects
